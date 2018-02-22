@@ -1,3 +1,4 @@
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -9,10 +10,11 @@ public class Demo {
 		
 		WebDriver driver = new ChromeDriver();
 		
-		driver.get("https://www.google.com.mx");
+		driver.get("https://www.facebook.com/");
+		////tagname[@attribute = 'value'] - xpath
 		
-		System.out.println(driver.getTitle());
-		System.out.println(driver.getPageSource());
+		// tagname[attribute = 'value'] - cssSelector
+		driver.findElement(By.cssSelector("input[name='email']")).sendKeys("Hola que tal");
 	}
 
 }
