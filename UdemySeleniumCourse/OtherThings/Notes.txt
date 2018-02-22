@@ -1,0 +1,16 @@
+What is the difference between Relative and absolute xpaht?
+
+Relative - Does not depend on parent nodes
+
+Absolute - Whe you use the parent/child nodes to reach your web element.
+
+Traverse to sibling 
+relativeXpath/following-sibling::tagname
+
+
+Traverse back to parent
+relativeXpath/parent::ul
+
+Xpath with text
+//*[text()='Deposite su texto aqui'] 
+
